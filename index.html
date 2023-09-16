@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="icon" href="./image6.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foodie landing page</title>
+    <embed name="GoodEnough" src="/music/good_enough.mp3" loop="false" hidden="true" autostart="true">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <nav>
+            <div class="lft-nav">
+                <h3>Foodie</h3>
+            </div>
+            <div class="cntr-nav">
+                <a href="#">Menu</a>
+                <a href="#">Categories</a>
+                <a href="#">Restaurants</a>
+                <a href="#">About</a>
+            </div>
+            <div class="rght-nav">
+                <div class="search">
+                    <i class="bx bx-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="cart">
+                    <i class="bx bx-cart-alt"></i>
+                </div>    
+            </div>
+            <i class="bx bx-menu-alt-right menu" id="menu"></i>
+        </nav>
+        <div class="resp-nav">
+            <i class="bx bx-x" id="close"></i>
+            <a href="#">Menu</a>
+            <a href="#">Categories</a>
+            <a href="#">Restaurants</a>
+            <a href="#">About</a>
+        </div>
+   
+        <div class="mainContent">
+            <div id="left">
+                <h1 class="firsth1">Eat together</h1>
+                <h1 class="secondh1">Live another day</h1>
+                <p class="ptag">Food is any substance consumed by an organism for nutritional support. Food is usually of plant, animals or fungal support.</p>
+                <div class="search search1">
+                    <input type="text" placeholder="DELHI, INDIA">
+                    <i class="bx bx-current-location"></i>
+                </div>
+                <button>Explore Now</button>  
+            </div>
+            <div id="right">
+                <img id="imagebg" src="./assets/bganimate.png"  alt="">
+                <div id="all-plate">
+                    <img id="img-one" src="./assets/image1.png" alt="">
+                    <img id="img-two" src="./assets/image2.png" alt="">
+                    <img id="img-three" src="./assets/image3.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

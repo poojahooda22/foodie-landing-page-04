@@ -1,0 +1,369 @@
+@font-face {
+    font-family: Gilroy-Medium;
+    src: url(./Fonts/Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: Gilroy-Black;
+    src: url(./Fonts/Gilroy-Black.ttf);
+}
+@font-face {
+    font-family: Gilroy-Bold;
+    src: url(./Fonts/Gilroy-Bold.ttf);
+}
+@font-face {
+    font-family: Gilroy-SemiBold;
+    src: url(./Fonts/Gilroy-SemiBold.ttf);
+}
+@font-face {
+    font-family: Gilroy-Light;
+    src: url(./Fonts/Gilroy-Light.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Gilroy;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+}
+
+nav .menu {
+    display: none;
+}
+
+.resp-nav {
+    display: none;
+}
+
+.lft-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    height: 100%;
+}
+.lft-nav h3 {
+    font-size: 2vw;
+    font-family: Gilroy-Bold;
+    color: #ff8000;
+}
+
+.cntr-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    width: 50vw;
+    height: 100%;
+}
+.cntr-nav a {
+    text-decoration: none;
+    font-size: 1.4vw;
+    font-family: Gilroy-Medium;
+    color: rgb(55, 55, 55);
+    font-weight: 500;
+}
+
+.search {
+    width: 14vw;
+    height: 4vh;
+    padding-left: 1vw;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.search input {
+    padding: 10px; /* Adjust as needed for padding */
+    outline: none;
+    background: none;
+    border: none;
+    font-size: 14px;
+    font-family: Gilroy-Medium; /* Adjust as needed for font size */
+    width: 100%; /* Fill the available width */
+}
+
+.search i {
+    font-size: 1.4vw;
+    color: rgb(55, 55, 55);
+    margin-right: 10px; /* Add some spacing between icon and input */
+}
+.rght-nav {
+    gap: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    height: 100%;
+}
+.cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: .8vw; */
+    border-radius: 8px;
+    padding: .6vw .6vw;
+    background-color: #ff8000;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.cart i {
+    font-size: 1.9vw;
+    color: white;
+}
+.mainContent {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#left {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 4.4vw;
+    width: 60%;
+    height: 100%;   
+} 
+
+#left .firsth1 {
+    font-size: 7.2vw;
+    font-family: Gilroy-Bold;
+    font-weight: 600;
+}
+ .secondh1 {
+    font-size: 5.8vw;
+    font-family: Gilroy-Light;
+    font-weight: 500;
+    margin-top: .1vw;
+}
+#left p {
+    margin-top: 2vw;
+    width: 80%;
+    font-size: 1.3vw;
+    font-family: Gilroy-Medium;
+    color: rgb(151, 151, 151);
+    margin-bottom: 3vw;
+}
+
+#left .search  {
+    width: 30vw;
+    height: 4.8vh;
+    padding-left: 1vw;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vw;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#left  button {
+    height: 48px;
+    width: 12vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: #ff8000;
+    color: white;
+    font-size: 1.2vw;
+    font-family: Gilroy-Medium;
+    border: none;
+    border-radius: 8px;
+}
+
+#right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+
+}
+ #imagebg {
+   width: 35vw;
+}
+
+#all-plate {
+    position: absolute;
+    right: 10%;
+    width: 30vw;
+    height: 30vw;
+    animation: circle 8s linear infinite;  
+}
+
+#img-one {
+    width: 15vw;
+    position: absolute;
+    top: -15%;
+    right: -10%;
+}
+#img-two {
+    position: absolute;
+    width: 30vw;
+    bottom: -40%;
+    right: -30%;
+}
+#img-three {
+    position: absolute;
+    width: 20vw;
+    top: -10%;
+    left: -35%;
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 500px) {
+    
+    .lft-nav {
+        padding: 0 4vw;
+    }
+
+    .lft-nav h3 {
+        font-size: 4vw;
+    }
+    .cntr-nav {
+        display: none;
+    }
+    .rght-nav {
+        display: none;
+    }
+    nav { 
+        justify-content: space-between;
+        padding-right: 5vw;
+        padding-left: 10vw;
+    }
+    .lft-nav h3 {
+        font-size: 7.5vw;
+    }
+    nav .menu {
+        display: initial;
+        font-size: 8vw;
+    }
+    .resp-nav {
+        position: absolute;
+        top: 0%;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        display: initial;
+        font-size: 4vw;
+        z-index: 9;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10vw;
+        background-color: #f8e2cd;
+        transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+        
+    }
+    .resp-nav  a {
+        text-decoration: none;
+        font-size: 5.8vw;
+        font-weight: 500;
+        color: #333;
+    }
+    .resp-nav i {
+        position: absolute;
+        top: 10vw;
+        right: 8vw;
+        color: #ff8000;
+        font-size: 12vw;
+    }
+    .mainContent {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    #right {
+        width: 100%;
+        height: 50%;
+    }
+    #left {
+        justify-content: flex-start;
+        width: 100%;
+        height: 50%;
+        gap: 3vw;
+    }
+    #imagebg {
+        width: 70vw;
+    }
+    #all-plate {
+        right: 20%;
+        width: 55vw;
+        height: 55vw;
+    }
+    #img-one {
+        top: -12%;
+        right: -28%;
+        width: 30vw;
+    }
+    #img-two {
+        bottom: -50%;
+        right: -25%;
+        width: 50vw;
+    }
+    #img-three {
+        top: -10%;
+        left: -28%;
+        width: 40vw;
+    }
+    #left .firsth1 {
+        font-size: 12vw;
+    }
+    .secondh1  {
+        font-size: 10vw;
+    }
+    #left p {
+        width: 100%;
+        font-size: 4vw;
+        /* margin-top: 4vw;
+        margin-bottom: 5vw; */
+        line-height: 1;
+    }
+    #left .search{
+        width: 70vw;
+        height: 10vw;
+    }
+    #left .search input {
+        font-size: 2.8vw;
+    }
+    #left .search  i {
+        font-size: 4vw;
+    }
+    #left  button  {
+        height: 36px;
+        width: 30vw;
+        font-size: 3vw;
+    }
+}
